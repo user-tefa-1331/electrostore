@@ -77,3 +77,23 @@ li {
 .producto button:hover {
     background-color: #2463b4;
 }
+.carrito {
+    background: white;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.carrito button {
+    background: #123b77;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.carrito li {
+    margin-bottom: 10px;
+}
