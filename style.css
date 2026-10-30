@@ -33,3 +33,47 @@ ul {
 li {
     padding: 8px;
 }
+/* Catálogo de productos */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Tarjetas de productos */
+.producto {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto-icono {
+    font-size: 65px;
+}
+
+.producto h3 {
+    color: #123b77;
+}
+
+.precio {
+    font-size: 22px;
+    font-weight: bold;
+    color: #16803c;
+}
+
+/* Botones de compra */
+.producto button {
+    background-color: #123b77;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #2463b4;
+}
