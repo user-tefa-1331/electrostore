@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,56 +9,26 @@
 </head>
 <body>
 
-<h1>ElectroStore - La mejor tecnología</h1>
+    <h1>ElectroStore - La mejor tecnología</h1>
     <p>Tu tienda de confianza en productos electrónicos.</p>
 
     <h2>Nuestros productos</h2>
 
-    <div class="catalogo">
-
-    <div class="producto">
-        <div class="producto-icono">💻</div>
-        <h3>Laptop Lenovo</h3>
-        <p>Laptop ideal para estudiar y trabajar.</p>
-        <p class="precio">S/ 2,499.00</p>
-        <button onclick="agregarAlCarrito('Laptop Lenovo', 2499)">Agregar al carrito</button>
+    <!-- Los productos se cargarán desde MySQL -->
+    <div class="catalogo" id="catalogo-productos">
+        <p>Cargando productos...</p>
     </div>
-
-    <div class="producto">
-        <div class="producto-icono">📱</div>
-        <h3>Samsung Galaxy</h3>
-        <p>Celular con excelente cámara y rendimiento.</p>
-        <p class="precio">S/ 1,299.00</p>
-        <button onclick="agregarAlCarrito('Samsung Galaxy', 1299)">Agregar al carrito</button>
-    </div>
-
-    <div class="producto">
-        <div class="producto-icono">📺</div>
-        <h3>Smart TV LG 55"</h3>
-        <p>Televisor inteligente con resolución 4K.</p>
-        <p class="precio">S/ 1,899.00</p>
-        <button onclick="agregarAlCarrito('Smart TV LG', 1899)">Agregar al carrito</button>
-    </div>
-
-    <div class="producto">
-        <div class="producto-icono">🧺</div>
-        <h3>Lavadora Samsung</h3>
-        <p>Lavadora automática de gran capacidad.</p>
-        <p class="precio">S/ 1,599.00</p>
-        <button onclick="agregarAlCarrito('Lavadora Samsung', 1599)">Agregar al carrito</button>
-    </div>
-
-</div>
 
     <h2>Contáctanos</h2>
     <p>Encuentra la mejor tecnología al mejor precio.</p>
-<section class="carrito">
-    <h2>🛒 Mi carrito de compras</h2>
-    <ul id="lista-carrito"></ul>
-    <h3>Total: S/ <span id="total">0.00</span></h3>
-    <button onclick="vaciarCarrito()">Vaciar carrito</button>
-</section>
 
-<script src="script.js"></script>
+    <section class="carrito">
+        <h2>🛒 Mi carrito de compras</h2>
+        <ul id="lista-carrito"></ul>
+        <h3>Total: S/ <span id="total">0.00</span></h3>
+        <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
