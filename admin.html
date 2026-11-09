@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar productos - ElectroStore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f5f9;
+            padding: 25px;
+        }
+        main {
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1 { color: #173b73; }
+        form {
+            display: grid;
+            gap: 10px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input, button {
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        button {
+            cursor: pointer;
+            background: #1765c1;
+            color: white;
+            border: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .tabla {
+            overflow-x: auto;
+        }
+        .eliminar { background: #c62828; }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Administración de ElectroStore</h1>
+    <p>Registrar, consultar, actualizar y eliminar productos.</p>
+
+    <form id="formProducto">
+        <input type="hidden" id="productoId">
+        <input id="nombre" placeholder="Nombre del producto" required>
+        <input id="descripcion" placeholder="Descripción">
+        <input id="precio" type="number" step="0.01" min="0"
+               placeholder="Precio" required>
+        <input id="stock" type="number" min="0" step="1"
+               placeholder="Stock" required>
+        <button type="submit" id="guardar">Guardar producto</button>
+        <button type="button" id="cancelar">Cancelar edición</button>
+    </form>
+
+    <h2>Lista de productos</h2>
+    <div class="tabla">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="listaProductos"></tbody>
+        </table>
+    </div>
+</main>
+
+<script src="admin.js"></script>
+</body>
+</html>
